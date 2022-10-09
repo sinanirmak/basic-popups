@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="popup.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="popup.js"></script>
+
+<style> * {font-family: verdana;} .code { background-color: #a6a6a6; padding: 2.5px; font-family: monospace; } p {margin: 0;} img {max-width: 100%;}</style>
+
+<h3>Basic Popups</h3>
+
+<hr>
+
+<button onclick="pop.up('Title Is Here', 'Body Text/Images/Buttons... Are Here')">Popup With Text</button>
+<br><br>
+
+<p>onclick attribute of this button:</p>
+<p class="code">pop.up('Title Is Here', 'Body Text / Images / Buttons... Are Here');</p>
+
+<hr>
+
+<button onclick="popup_with_image('Title', 'https://www.w3schools.com/tags/img_girl.jpg', 'Caption Here')">Popup With Text</button> <small>(Image is from W3Schools)</small>
+<br><br>
+
+<p>onclick attribute of this button:</p>
+<p class="code">popup_with_image('Title', 'https://www.w3schools.com/tags/img_girl.jpg', 'Caption Here')</p>
+<br>
+<p>popup_with_image(title, img, text) function:</p>
+<p class="code">
+function popup_with_image(title, img, text){<br>
+&nbsp;&nbsp;let contentelem = '&lt;figure&gt;&lt;img src=&quot;&apos; + img + &apos;&quot;&gt;&lt;figcaption&gt;&apos; + text + &apos;&lt;/figcaption&gt;&lt;/figure&gt;';<br>
+  <br>
+&nbsp;&nbsp;pop.up(title, contentelem);<br>
+}
+</p>
+
+<hr>
+
+<h4>Use Basic Popups on your site:</h4>
+<p class="code">
+&lt;!-- JQUERY -- &gt;<br>
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"&gt;&lt;/script&gt;<br><br>
+&lt;!-- BASIC POPUPS --&gt;<br>
+&lt;link rel="stylesheet" href="popup.css"&gt;<br>
+&lt;script src="popup.js"&gt;&lt;/script&gt;
+</p>
+
+<hr>
+<small>Note: jQuery is required for the popup to work.</small><br>
+<small><a href="popup.js">popup.js file</a> <a href="popup.css">popup.css file</a></small>
+
+<script>
+function popup_with_image(title, img, text){
+  let contentelem = '<figure><img src="' + img + '"><figcaption>' + text + '</figcaption></figure>';
+  
+  pop.up(title, contentelem);
+}
+</script>
