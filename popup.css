@@ -30,8 +30,6 @@
   max-width: 80vw; 
   min-height: 20vh;
   max-height: 80vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
   background-color: #000;
 } 
 
@@ -42,6 +40,8 @@
 #popup_content { 
   background: #fff;
   color: #000;
+  overflow-y: scroll;
+  overflow-x: hidden;
 } 
 
 #popup_title, #popup_content { 
