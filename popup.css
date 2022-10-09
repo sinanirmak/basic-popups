@@ -35,11 +35,13 @@
 
 #popup_title { 
   background: #000000; 
+  max-height: 3vh;
 } 
 
 #popup_content { 
   background: #fff;
   color: #000;
+  max-height: 77vh;
   overflow: scroll;
 } 
 
