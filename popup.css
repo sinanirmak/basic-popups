@@ -28,20 +28,18 @@
   transform: translate(-50%, -50%); 
   min-width: 20vw; 
   max-width: 80vw; 
-  min-height: 20vh;
-  max-height: 80vh;
   background-color: #000;
 } 
 
 #popup_title { 
   background: #000000; 
-  max-height: 3vh;
 } 
 
 #popup_content { 
   background: #fff;
   color: #000;
-  max-height: 77vh;
+  min-height: 20vh;
+  max-height: 80vh;
   overflow: scroll;
 } 
 
